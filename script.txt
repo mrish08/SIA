@@ -1,0 +1,44 @@
+auth/signup -post || auth/signin -post  //login&signup
+{
+    "email": "rishm@gmail.com",
+    "password": "mrish"
+}
+
+
+users - Get || users/current -Get  //get user details
+
+{
+    "email": "rishm@gmail.com",
+    "password": "mrish"
+}
+
+users/update -Put //update user
+{
+    "email": "121rishm@gmail.com",
+    "password": "mrish"
+}
+
+user/delete - Put //delete user
+{
+    "user_id": "189684b0-a046-11ec-9712-f746767e14ea",
+    "status": false
+}
+
+tasks -get  //create task
+{
+    "task_name": "running"
+}
+
+tasks -put //update
+{
+    "task_id": "72efd95c-9f81-11ec-8e25-08606e6e0e8b",
+    "task_name": "natutulog",
+    "task_is_complete": true
+}
+
+task/delete -put ||delete task
+{
+    "task_id": "0dde6367-9f69-11ec-abab-08606e6e0e8b",
+    "status": false
+}
+
